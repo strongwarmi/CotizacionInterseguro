@@ -1,3 +1,39 @@
+.cabecera {
+  background-image: url(../assets/img/cabecera2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10px; }
+  .cabecera label {
+    color: #006ab8; }
+
+.bg-azul {
+  background-color: #006ab8; }
+
+.bg-sky {
+  background-color: #41b5e7; }
+
+.bg-gray {
+  background-color: #f6f3f7;
+  text-align: center; }
+
+#plan {
+  background-color: #ffffff; }
+  #plan table th {
+    border-bottom: 0;
+    color: #ffffff;
+    padding: 0; }
+  #plan table .plan {
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px; }
+  #plan table th:nth-child(2),
+  #plan table th:nth-child(3) {
+    width: 25%; }
+  #plan table td {
+    vertical-align: middle;
+    border-top: 0;
+    padding: 0; }
+
 .fucsia {
   color: #ff005b; }
 

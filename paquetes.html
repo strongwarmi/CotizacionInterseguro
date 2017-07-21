@@ -3,116 +3,124 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container">
-    <header id="header">
+<body>
+    <header class="cabecera">
         <div class="container">
             <nav class="navbar">
                 <div class="navbar-left pull-left ">
-                    <img src="assets/img/logo_interseguro.png" alt=""> <span class="omnes-medium">SEGURO DE VIAJES</span>
+                    <img src="assets/img/logo_interseguro.png" alt=""> <span class="omnes-medium hidden-xs">SEGURO DE VIAJES</span>
                 </div>
-                <div class="navbar-rigth pull-right omnes-regular">
+                <div class="navbar-rigth pull-right omnes-regular hidden-xs">
                     <a href="#">Beneficios </a>
                     <a href="#"> Ofertas por destinos</a>
                 </div>
+                <div class="navbar-rigth pull-right omnes-regular visible-xs">
+                    <button type="button" class="btn menu visible-xs" aria-label="Left Align">
+                    <small>MENÚ</small><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
+                </div>
             </nav>
-        </div>
-    </header>
-    <section id="banner">
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <p class="fucsia omnes-regular">Disfruta más de tu viaje sintiéndote</p>
-                <p class="azul omnes-semibold hidden-xs">SEGURO</p>
-                <h1 class="azul omnes-semibold visible-xs">SEGURO</h1>
-                <p class="blanco omnes-regular hidden-xs">No importa el destino que elijas, cuidamos de ti <br>y de tus bienes personales en todo el mundo.</p>
+            <div class="row">
+                <form>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label><small>Destino</small></label>
+                            <input class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label><small>Partida</small></label>
+                            <input class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-1 hidden-xs hidden-sm">
+                        <div class="form-group">
+                            <img src="assets/img/icon_arrow_blue.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label><small>Retorno</small></label>
+                            <input class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-xs-4">
+                        <div class="form-group">
+                            <label><small>Adultos</small></label>
+                            <select class="btn" name="" id="">
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-xs-3">
+                        <div class="form-group">
+                            <label><small>Niños</small></label>
+                            <select class="btn" name="" id="">
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 text-center">
+                        <button class="btn-cotizar">COTIZAR</button>
+                    </div>
+
+                </form>
             </div>
         </div>
-    </section>
-    <section>
+    </header>
+    <section id="plan" class="container">
         <div class="row">
-            <div id="cotiza" class="col-sm-8 col-sm-offset-2 omnes-medium">
-                <div class="col-sm-12">
-                    <div class="col-sm-1">
-                        <img class="maletin" src="assets/img/icon_cotizacion.png" alt="">
-                    </div>
-                    <div class="col-sm-11">
-                        <h3 class="azul">Cotiza el seguro de tu próximo viaje</h3>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <div class="col-sm-5">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <small class="celeste">Partida</small><br>
-                                <input class="input-coti" placeholder="20/07/17">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 text-center hidden-xs">
-                        <img src="assets/img/icon_arrow_gray.png" alt="">
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <small class="celeste">Retorno</small><br>
-                                <input class="input-coti" placeholder="20/07/17">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <div class="col-sm-5">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <small class="celeste">Destino</small><br>
-                                <input class="input-coti" type="text" placeholder="Ingrese destino">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-5">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <small class="celeste">Correo electrónico</small><br>
-                                <input class="input-coti" type="text" placeholder="Ingrese correo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <div class="col-sm-2">
-                        <h4 class="celeste">Pasajeros</h4>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <small class="celeste">Adultos</small><br>
-                                <select class="input-coti" name="" id="">
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <small class="celeste">Niños</small><br>
-                                <select class="input-coti" name="" id="">
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 text-center">
-                    <button class="btn-cotizar">COTIZAR</button>
-                </div>
+            <div class="col-sm-12 azul">
+                <h2 class="omnes-regular">Elige y compra en línea</h2>
+                <h1 class="omnes-semibold">EL PLAN A TU MEDIDA</h1>
+            </div>
+            <div class="col-sm-12 ">
+                <table class="table omnes-regular">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="text-left">
+                                <div class="plan bg-azul">
+                                    <h3>PLAN <br><span class="omnes-medium">STANDARD</span></h3>
+                                    <h1 class="omnes-semibold">s/. 70<small class="blanco"> por persona</small></h1>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="plan bg-sky">
+                                    <h3>PLAN <br><span class="omnes-medium">PREMIUM</span></h3>
+                                    <h1 class="omnes-semibold">s/. 85<small class="blanco"> por persona</small></h1>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>Asistencia médica en caso de accidente</h4>
+                            </td>
+                            <td>
+                                <div class="plan bg-gray">
+                                    <img src="assets/img/icon_check.png" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="plan bg-gray">
+                                    <img src="assets/img/icon_check.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
