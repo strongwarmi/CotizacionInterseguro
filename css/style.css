@@ -37,7 +37,7 @@ body {
 
 @media (max-width: 425px) {
   body {
-    background-size: cover; } }
+    background-size: 621px; } }
 header {
   padding-top: 20px; }
   header span {
@@ -50,6 +50,9 @@ header {
     color: #006ab8;
     padding: 0 10px;
     font-size: 15px; }
+  header .menu {
+    background-color: transparent !important;
+    border: 0; }
 
 #banner {
   margin-top: 8%; }
@@ -61,6 +64,9 @@ header {
   #banner p:nth-child(3) {
     font-size: 16px; }
 
+@media (max-width: 425px) {
+  #banner {
+    margin-top: 0; } }
 #cotiza {
   background-color: white;
   border-radius: 30px 0 0 0;
