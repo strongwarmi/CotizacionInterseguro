@@ -52,7 +52,11 @@ body {
     background-repeat: no-repeat;
     background-position: top;
 }
-
+@media (max-width: 425px) {
+    body{
+        background-size: cover;
+    }
+}
 header {
     padding-top: 20px;
     span {
