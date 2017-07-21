@@ -54,6 +54,9 @@ header {
     background-color: transparent !important;
     border: 0; }
 
+@media (max-width: 320px) {
+  header img {
+    width: 180px; } }
 #banner {
   margin-top: 8%; }
   #banner p:nth-child(1) {

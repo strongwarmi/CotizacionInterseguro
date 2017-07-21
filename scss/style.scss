@@ -75,7 +75,15 @@ header {
     }
     .menu {
         background-color: transparent !important;
-        border: 0;        
+        border: 0;
+    }
+}
+
+@media(max-width:320px) {
+    header {
+        img {
+            width: 180px;
+        }
     }
 }
 
